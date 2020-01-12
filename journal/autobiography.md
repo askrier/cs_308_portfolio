@@ -1,6 +1,7 @@
 # CompSci Autobiography
 ### NAME
 
+Andrew Krier
 
 #### First Computing Experience
 
