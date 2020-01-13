@@ -21,7 +21,7 @@ The best coding experience I have had was experimenting with Android Development
 
 #### Most (or Least) Favorite Programming Project
 
-
+My most enjoyable programming project was when I was first learning python in EGR 103. I designed a program to check a certain number of integers and see if any of them failed the Collatz Conjecture (essentially an iterative process). By no means was it the most complicated thing I had ever designed, but it was great to see what I could accomplish with a few lines of code and a bit of time to let it run.
 
 #### Design Thoughts
 
