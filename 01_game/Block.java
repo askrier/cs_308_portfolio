@@ -34,7 +34,9 @@ public class Block extends Rectangle {
     }
 
     public void ballCollision(Ball ball) {
+
         Shape intersection = Shape.intersect(this, ball);
+
         if(intersection.getBoundsInLocal().getWidth() != -1){
             if(this.getX() <= ball.getCenterX() && ball.getCenterX()<= (this.getX() + BLOCK_WIDTH)){
                 ball.setYSpeed(ball.getYSpeed() * -1);
