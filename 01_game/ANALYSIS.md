@@ -104,5 +104,28 @@ reaching and as far as I can tell it has been the right one so far.
 When I was planning out my game class by class I thought it would be much easier if each level were a different class. 
 I reasoned that InitialScreen could just call three different constructors and be done. This was the prevailing thought 
 until I got to the end of making the first level all in InitialScreen. I realized that there was no good reason to have 
-so much duplicated code for what could really be something as simple as an iterated number
+so much duplicated code for what could really be something as simple as an iterated number. This proved to do well in 
+the end since I was able to implement any variation of level I wanted and still maintained some form of sanity in my 
+code.
+
+One of the biggest regrets I have is not figuring out how to navigate between levels and screens be the first thing I 
+did. This was such a hassle to have to deal with at the end and a lot of my code changed because of it. I am to this 
+point happy with how I allocated jobs to different classes, though obviously it stands to improve considerably. New 
+features are not seamless to add, but it's always clear where they should be implemented and what needs to change because
+of it. 
+
+## Conclusion
+
+The best thing I learned in this project is building something organized from start to finish. Before this I never truly
+understood any of the CS 201 frameworks given to me, I just knew how to plug away at methods until things started working
+properly. This definitely gives me more confidence to try and implement more projects by myself to see just how far I 
+can push my abilities. The worst thing that happened in the project was a very big obstacle in the beginning. I had 
+Block extend Rectangle since it had a lot of functionality I wanted as well, little did I know that IntelliJ picked the 
+wrong package to extend from so I was so confused why the methods that I wanted weren't showing up. By the time I 
+figured out the issue so much time had been lost in trying to accommodate this incorrect class extension. 
+
+To be a better designer I should put in more time and thinking upfront. I really want to get as deep as I can into the 
+depths of a program's requirements before even getting close to a .java file. I am going to keep my classes minimalistic
+and my methods as basic as possible. I'm going to stop ignoring the importance of naming things until the very last minute
+when I'm trying to figure out what things are only to find a variable called "number" stashed somewhere in my code.
 
