@@ -75,9 +75,28 @@
 
 ## Alternate Designs
 
-
+* Describe which classes would be affected by changing the Grid's data structure (say from a 2D array to a Map).
+    * VisualizationView would change how it accessed and iterated through the grid.
+    * Neighborhood (and its adjacent Hex and Triangle Neighborhoods) would need to change how it found relative cells to access and return data from.
+    * SimData would format it's parsed-in data as a map to make transitioning it to the grid would be much simpler
+    
+* Describe how well (or poorly) the original design handled the project's extensions to the original specifications (how were any changes discussed? how were and decisions ultimately made?).
+    * The original design really did not handle many of the extensions well in the beginning. Though things started rolling once a gridpane was abandoned in the simulation aspect that allowed a lot more functionality to be added.
+    
+* Describe two design decisions discussed by the team about any part of the program in detail:
+    * 
+    * 
 
 ## Conclusions
 
+* Describe the best feature of the project's current design and what did you learn from reading or implementing it?
+    * The best feature of this project's design (that I primarily contributed to) is the XMLDocumentBuilder. I learned a ton about the packages needed to transform a nested list of nodes into a functioning XML document and perfectly replicates the situation saved.
 
+* Describe the worst feature that remains in the project's current design and what did you learn from reading or implementing it?
+    * 
+
+* To be a better designer in the next project, what should you
+    * I should put way more thought into planning before attacking a project head-on. I'm fairly sure I said the same thing for my last analysis, and while I did change that, it was clearly not enough. 
+    * I want to keep assuming the worst of my inputs. If I leave the classroom and put a program out into the world, the odds that every input is exactly how I want it to be are slim to none, and the programs that I develop should be able to handle this.
+    * I need to stop procrastinating. I will communicate with my team early and often so that any scramble at the end is minimized and life is a lot more stress-free.
 
