@@ -17,8 +17,7 @@
     *  As long as there are no attributes that cannot be described with the current available input fields, all that would need to be changed is the SimData class to adjust for how many types of cells it has, and the cell class itself would be made to be able to implement the decision making. The rest of the infrastructure should be able to handle any type of simulation and rules handed to it as long as it is within certain criterea.
 
 * Are the dependencies between the parts clear and easy to find (e.g., public methods and parameters) or do they exist through "back channels" (e.g., static calls, order of method call, requirements for specific subclass types)?
-    * Class dependencies are pretty clear and easy to find, the assumed state of a method is private, but the public ones are almost all getters, and setters when necessary.
-
+    * Class dependencies are pretty clear and easy to find, the assumed state of a method is private, but the public ones are almost all getters, and setters when necessary. The variables are also generally easy to find within a class as most have them are outlined in the definitions.
 
 * What makes it readable or not (i.e., do classes and methods do what you expect and have logic that is clear and easy to follow)? Give specific examples.
     * Using class GameOfLifeCell
@@ -64,7 +63,6 @@
 * Describe what you think makes this project's overall design flexible or not (i.e., what new features do you feel it is able to support adding easily).
     * I think this project's design flexibility hinged on the capacity to handle many many different types of cells. Not being dependent on cell type or attribute allowed the grid to hold these generic classes and still pass the correct information to the visualization, and properly interpret the information from the configuration. This design can flex to many different cell rule parameters given the neighborhood.
     
-    
 * Describe two features from the assignment specification that you feel were made easier to implement by the design and why.
     * Random testcases were very straightforward to implement since the cell type limits were readily available and the simulation didn't have the initial conditions pre-installed.
     * XMLDocumentBuilding was very straightforward to implement since each simulation had a set number of attributes, allowing them all to be sequentially formatted and added.
@@ -84,8 +82,8 @@
     * The original design really did not handle many of the extensions well in the beginning. Though things started rolling once a gridpane was abandoned in the simulation aspect that allowed a lot more functionality to be added.
     
 * Describe two design decisions discussed by the team about any part of the program in detail:
-    * 
-    * 
+    * In the beginning, I spent an inordinate amount of time trying to implement an XML file that had a tag for every cell in every row. After discussing with my team, we came to the conclusion that the effort being put into this tiny feature was not nearly worth what would be gained from it. From there I pivoted to parsing a string of all the values and that worked very well.
+    * Towards the end of a project the simulation aspect was struggling to have adequate control over the shapes they were displaying. After much talking about how switching would impact the overall design and implementation, we collectively decided to move to a regular pane that eventually allowed us to implement new shapes and control the simulation size a lot better.
 
 ## Conclusions
 
@@ -93,7 +91,7 @@
     * The best feature of this project's design (that I primarily contributed to) is the XMLDocumentBuilder. I learned a ton about the packages needed to transform a nested list of nodes into a functioning XML document and perfectly replicates the situation saved.
 
 * Describe the worst feature that remains in the project's current design and what did you learn from reading or implementing it?
-    * 
+    * When the graph works properly it is an amazing addition to the project; however, when it doesn't it is entirely useless and is very buggy when it comes to performance. While I was not the primary individual implementing this feature I now understand that managing subsets of animations is a very difficult task to accomplish.
 
 * To be a better designer in the next project, what should you
     * I should put way more thought into planning before attacking a project head-on. I'm fairly sure I said the same thing for my last analysis, and while I did change that, it was clearly not enough. 
