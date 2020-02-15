@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<data game = "simulation">
+    <author>John von Neumann</author>
+    <sim_type>cellsociety.GameOfLifeCell</sim_type>
+    <cell_sides>6</cell_sides>
+    <cell_rows>17</cell_rows>
+    <cell_columns>17</cell_columns>
+    <vals>13579135791357913102040608060402011111111111111111110000000000000001111111111111111111000000000000000111111111111111111r</vals>
+    <wrap_type>regular</wrap_type>
+    <neighbor_type>full</neighbor_type>
+</data>
