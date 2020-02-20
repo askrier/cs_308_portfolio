@@ -1,26 +1,26 @@
-# CompSci Autobiography
+# Weekly Reflection
 ### NAME
+Andrew Krier
+### DATE
+02/21/2020
+#### Interesting Notes
+
+##### Thing #1
+
+##### Thing #2
 
 
-#### First Computing Experience
+#### Summaries
+
+##### Thing #1
+
+##### Thing #2
 
 
-#### Why Study CompSci
+#### Reflection
 
+##### What was difficult about your work this week and why?
 
-#### My Daily Experiences
+##### What were the most important things you learned?
 
-
-#### Best (or Worst) Programming Experience
-
-
-#### Most (or Least) Favorite Programming Project
-
-
-#### Design Thoughts
-
-
-#### CompSci 308 Goals
-
-
-#### Using Programming in the Future
+##### How will this learning change your work next week?
